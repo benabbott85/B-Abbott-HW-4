@@ -21,3 +21,6 @@ h1 {
     background: teal;
 }
 
+.hide {
+    display: none;
+}
