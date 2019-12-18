@@ -24,3 +24,8 @@ h1 {
 .hide {
     display: none;
 }
+
+#austin {
+    margin-left: 400px;
+    margin-top: 10px;
+}

@@ -4,14 +4,15 @@ var timerEL= document.getElementById("timer");
 var qIndex = 0;
 var questionsEl = document.getElementById("questions");
 var choicesEl = document.getElementById("choices");
-
+// var austinEL = document.getElementsById("austin");
 
 
 function startQuiz(){
     var getStart = document.getElementById("start");
+
     getStart.setAttribute("class", "hide");
     questionsEl.removeAttribute("class");
-    // quizTimer();
+    quizTimer();
     displayQuestion();
     // console.log("quizstarted")
 }
@@ -52,12 +53,13 @@ function quizTimer (){
         timerEL.textContent = "time " + quizCountdown;
         quizCountdown--;
         
-        if(quizCountdown === 0){
+        if(quizCountdown === 0 || currentQuestion === qIndex.length){
             clearInterval(timerInterval);
             timerEL.textContent = "";
             questions.textContent = "Score: " + highScore;
             
         }
+
     }, 1000)
                     
                        
@@ -70,10 +72,7 @@ function quizTimer (){
 
 
 startEl.onclick = startQuiz;
-choicesEl.onclick = choices
-// startEl.addEventListener("click", function(){
-//     console.log("work please")
-// })
+choicesEl.onclick = choices;
 
 
 
