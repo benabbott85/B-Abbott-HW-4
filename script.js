@@ -84,7 +84,7 @@ function quizTimer() {
 
             }
         }
-        }, 100)
+        }, 500)
 
 
 }
