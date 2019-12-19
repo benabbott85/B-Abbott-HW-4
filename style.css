@@ -29,3 +29,8 @@ h1 {
     margin-left: 400px;
     margin-top: 10px;
 }
+
+.initial {
+    display: none;
+    text-align: center;
+}
